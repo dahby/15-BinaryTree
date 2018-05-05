@@ -34,6 +34,9 @@ describe('Binary Tree Tests', () => {
     test('Should return string in pre-order sequence', () => {
       expect(preOrderTraversal(tree.root)).toEqual('126789345');
     });
+    test('Should return correct typeof, "string"', () => {
+      expect(typeof preOrderTraversal(tree.root)).toEqual('string');
+    });
     test('Should return undefinted as there is no root node', () => {
       expect(preOrderTraversal(falseTree.root)).toEqual(undefined);
     });
@@ -41,6 +44,9 @@ describe('Binary Tree Tests', () => {
   describe('#inOrderTraversal', () => {
     test('Should return string in in-order sequence', () => {
       expect(inOrderTraversal(tree.root)).toEqual('687921435');
+    });
+    test('Should return correct typeof, "string"', () => {
+      expect(typeof inOrderTraversal(tree.root)).toEqual('string');
     });
     test('Should return undefinted as there is no root node', () => {
       expect(inOrderTraversal(falseTree.root)).toEqual(undefined);
@@ -50,14 +56,11 @@ describe('Binary Tree Tests', () => {
     test('Should return string in post-order sequence', () => {
       expect(postOrderTraversal(tree.root)).toEqual('897624531');
     });
+    test('Should return correct typeof, "string"', () => {
+      expect(typeof postOrderTraversal(tree.root)).toEqual('string');
+    });
     test('Should return undefinted as there is no root node', () => {
       expect(postOrderTraversal(falseTree.root)).toEqual(undefined);
     });
   });
 });
-
-// console.log('In-Order');
-// inOrderTraversal(tree.root);
-
-// console.log('Post-Order');
-// postOrderTraversal(tree.root);

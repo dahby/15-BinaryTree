@@ -11,8 +11,6 @@ const preOrderTraversal = (rootNode) => {
   preOrderOutput += rootNode.value;
   preOrderTraversal(rootNode.left);
   preOrderTraversal(rootNode.right);
-  // console.log(preOrderOutput[3]);
-  // console.log(preOrderOutput);
   return preOrderOutput;
 };
 
@@ -22,7 +20,6 @@ const inOrderTraversal = (rootNode) => {
   }
   inOrderTraversal(rootNode.left);
   inOrderOutput += rootNode.value;
-  // console.log(`Visiting a node with value ${rootNode.value}`);
   inOrderTraversal(rootNode.right);
   return inOrderOutput;
 };
@@ -34,7 +31,6 @@ const postOrderTraversal = (rootNode) => {
   postOrderTraversal(rootNode.left);
   postOrderTraversal(rootNode.right);
   postOrderOutput += rootNode.value;
-  // console.log(`Visiting a node with value ${rootNode.value}`);
   return postOrderOutput;
 };
 
