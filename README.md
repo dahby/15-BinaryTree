@@ -37,7 +37,8 @@ Implementation of an in-order traversal function for a binary tree data structur
     };
 ```
 
-###Documentation
+###Documentation:
+
 For testing, import the methods from the modules that we have previously created and instantiate a new Binary Tree by doing the following: 
 
 ```
